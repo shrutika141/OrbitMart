@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./themes/mycart.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>OrbitMart - MyCart</title>
+</head>
+<body>
+    <nav class="bg-white">
+        <div class="d-flex align-items-center justify-content-between ">
+            <div class="logo"><a href="#" class="text-uppercase"><img src="./images/orbitmart logo.PNG" alt=""></a></div>
+            <div class="ml-auto">
+            <a href="./main_page.html" class="mr-2">Back to shopping</a>
+            </div>
+        </div>
+    </nav>
+
+   <div class="container border rounded mt-4 mb-4 p-3 rounded cart">
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-12 col-md-offset-1">
+                <table class="table table-hover">
+                    <thead>
+                        <h3 class="text-primary">My Cart</h3>
+                        <tr>
+                            <th>Product</th>
+                            <th>Units</th>
+                            <th>Quantity</th>
+                            <th class="text-center">Price</th>
+                            <th class="text-center">Total</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-sm-8 col-md-6">
+                            <div class="media">
+                                <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 62px; height: 62px;"> </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading mt-3 ml-3 ">Product name</h6>
+                                </div>
+                            </div></td>
+                            <td class="col-sm-1 col-md-1">
+                                <div class="dropdown">
+                                    <button class="btn btn-sm border dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Select Units
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">1</a>
+                                      <a class="dropdown-item" href="#">2</a>
+                                      <a class="dropdown-item" href="#">3</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="col-sm-1 col-md-1" style="text-align: center">
+                            <input type="email" class="form-control" id="exampleInputEmail1" value="3">
+                            </td>
+                            <td class="col-sm-1 col-md-1 text-center"><strong>$4.87</strong></td>
+                            <td class="col-sm-1 col-md-1 text-center"><strong>$14.61</strong></td>
+                            <td class="col-sm-5 col-md-1">
+                            <button type="button" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-remove"></span> Remove
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-6">
+                            <div class="media">
+                                <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 62px; height: 62px;"> </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading mt-3 ml-3">Product name</h6>
+                                </div>
+                            </div></td>
+                            <td class="col-sm-1 col-md-1">
+                                <div class="dropdown">
+                                    <button class="btn btn-sm border dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Select Units
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">1</a>
+                                      <a class="dropdown-item" href="#">2</a>
+                                      <a class="dropdown-item" href="#">3</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="col-md-2" style="text-align: center">
+                            <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                            </td>
+                            <td class="col-md-1 text-center"><strong>$4.99</strong></td>
+                            <td class="col-md-1 text-center"><strong>$9.98</strong></td>
+                            <td class="col-md-1">
+                            <button type="button" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-remove"></span> Remove
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td><h6>Subtotal</h6></td>
+                            <td class="text-right"><h5>$24.59</h5></td>
+                        </tr>
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td><h6>Estimated shipping</h6></td>
+                            <td class="text-right"><h5>$6.94</h5></td>
+                        </tr>
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td><h4>Total</h4></td>
+                            <td class="text-right"><h5>$31.53</h5></td>
+                        </tr>
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>
+                               <a href="./main_page.html">
+                                    <button type="button" class="btn btn-default btn-sm">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                                    </button>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="./addresscart.html">
+                            <button type="button" class="btn btn-success btn-sm">
+                                Continue <span class="glyphicon glyphicon-play"></span>
+                            </button>  </a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

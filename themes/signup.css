@@ -1,0 +1,37 @@
+body {
+    min-height: 100vh;
+  }
+  
+  .form-control:not(select) {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  select.form-control {
+    height: 52px;
+    padding-left: 0.5rem;
+  }
+  
+  .form-control::placeholder {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .form-control:focus {
+    box-shadow: none;
+  }
+  nav .logo a {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none
+  }
+  
+  nav div.ml-auto a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem
+  }
+  nav,
+  .wrapper {
+    padding: 10px 50px
+  }
