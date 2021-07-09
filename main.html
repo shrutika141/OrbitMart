@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./themes/main2.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top bg-dark " style="height: 55px">
+        <div class="navbar-header page-scroll ">
+            <p class="navbar-brand text-light mt-2" style="font-size: 15px;">Welcome to OrbitMart !</p>
+        </div>
+        <div class="btn-group" >
+            <button type="button" class="btn btn-dark dropdown-toggle btn-sm" style="font-size: 15px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Settings
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a href="./profile.html"><button class="dropdown-item" type="button">My Account</button></a>
+                <a href="./signup.html"><button class="dropdown-item" type="button">Sign Up</button></a>
+                <a href="./login.html"><button class="dropdown-item" type="button">Sign In</button></a>
+            </div>
+        </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white font-weight-bold " id="secondheader">
+        <img src="./images/orbitmart logo.PNG" alt="reload it">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-5 align-items-center">
+                <li class="nav-item active w-25">
+                    <a class="nav-link " href="#"> Your pincode Nagpur,81610 <i class="ri-pencil-line"></i> </a>
+                </li>
+                <li class="nav-item active ml-2">
+                    <a class="nav-link" href="./main.html">Home </a>
+                </li>
+                <li class="nav-item active ml-2">
+                    <a class="nav-link" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item active ml-2">
+                    <a class="nav-link" href="./myorder.html">My Order</a>
+                </li>
+                <li class="nav-item active ml-2">
+                    <a class="nav-link" href="./contact-us.html">Contact us</a>
+                </li>
+            </ul>
+            <div class='align-items-end text-dark'>
+                <i id='searchi' class="ri-search-line mr-5"></i>
+            </div>
+       
+            <div id="_desktop_contact_link">
+                <div class="contact-link d-flex">
+                    <img id="customeric" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Qzc0MkMzQjg0NEE5MTFFQTgwNDFGODlFNDQxM0M3MjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Qzc0MkMzQjk0NEE5MTFFQTgwNDFGODlFNDQxM0M3MjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNzQyQzNCNjQ0QTkxMUVBODA0MUY4OUU0NDEzQzcyOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDNzQyQzNCNzQ0QTkxMUVBODA0MUY4OUU0NDEzQzcyOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqbE2QIAAATgSURBVHjatJhpbFRVGIZnhrYoNiDVGK1xhSJoXFERVFC0WAMRBI0K/pAQBRuNC3WJYsQFIj8U1KAExcQoBaFxS6xYSkYFIgUVUQEVR1wSbYJURShoW/X9kueYw/XcuTOAX/Jklnvnnvd+59vupKvOGpT6n+1JMUWU5Tlnp5hesh+LlIoqcZSoEHvENrFZ/MY5xyDkbLErz7UGiIZixdiiE8QYMVj8Lb4Vu0UPcZg4XGwS14oMxz4T74rywDU/EQ+LgwoV01s8ICaLj8RiUSu+QpBvh4rzxdein/f9HLwZtZ/dm0LEmBfmI+ICsT7h/F/FW4Hvz7C79z6bp1rFeSKXJCaN+24RN+ON0LaZF44U7eJTtmSfLJ+Y2WI0sfFF5NgJYhZes/jYKnoRqD9ZZohFvD9Y3CA28tvV4kfeXyS2i+tFW5yYO8U4cSEB6tsw8aZ4VfQV33vHuhPgs1loCnE2mXgZKM4kzZ8WQ7gRy7QJ6UCdOUdkxXCxNnKsj/hQ3CWez+PVSvGeWIiXzI5l4QfFPWy7vbbFbZOl4rNiZkCIy4iXE4Sk2IaxogVBW8TJXP86cblYlQos7tvV1IrHAwucJEZ4d5pkFshLxa18ti2dxjY5IROpS3uJSfN6O0L+CFx8GBfZHjh2aSRtnb3B78zmiRniTz5bvCygVlnNypiYoaKJ0m6qX4rJsqPZ82j62w0s4xpHRI5vJX7MOr3vu4m5FDyrMXdYLGUISBPyovjOeoS4PyCmjLuyatxfTBJryLwafvuleIy7rkRsqOoOJ+Ut23qKU8QTJRQru7vXUP82nTZkfbiTMgpcPdXZ+k8zXrYFluDJV2Kus5w0L6NllPt15nX2cwmLxNkloovXVYHj70OK64zk/JDtglbSvs3PpmkJQlJU1dYiKvxTBZyzzWVUJiY2QraRRllehJiaAs7pZPz4jxjbqnfcwYjVU/C60xiTrJIgTbIexNxeYmbQ0EoYAaKC/mKmWUAFzWfnIvq2SEqHiu5xZOK/Yu4j1ztoajYwNcZ46BmmOL+pjeQ3jha2symhdQxAbM6JqaKuDKZiNlLCu0jzqCCrJXUUuvEUsCxpX8MM3ELK2nbem0fMCEaKLtcozeUrxAbqTYptaqWjhlLTmukOmuAcSnoFxbCZJrmzgHixpvmC37VLvV5kLp7KxdoYnlwvOZ07t/HxNG++bcSDFcRdNW7fAB/gxfaIkCGIX+gH0Eou4PpKP96PQ0g3gnYlk5wtcLc4kVQfQ0euo0v3ZEJsYIsfYVI8NdLTZjJg/e57Zi0VeBndN0eDs4J1EwPQIERGC94PBG8jqV+Ld9eAW3g602F/dmESsXpFaJ65UXzDfpcjylr/cwRzXURIL+/9ajxWG3hscVv/EJnqFh9LGdkREtNBMOVoYrvprEMR1+zd5SwevI73rrMlRohfo8xz13ilYHm+Sa+DVM2xuAm6mAl/HkXMxoyrmG+z1IneBbKCzD0kTnh0iHKC6hFUjaAmXPoLQf0oz9Ob9uHxaFTcaBGa6NyWLcKV1cwefb3hKYvIUvb/ssgjSz7bU+xDXCeCnIcsoD/n2FTcnMVT64iZ9v397yST0NrHU12b+evD2Xwy6mNx5YEQkiTG99A6ClcDI8Z6CtbEhK5clKWL+OdqII+snQT05gP9F9c/AgwA86I/LUAPDuoAAAAASUVORK5CYII=" alt="">
+                    <div class="phone">
+                        <p class="mt-2" style="font-size: 18px;">Company Call us:</p>
+                        <a class="text-dark" href="tel:(+800)345678">(+800)345678</a>
+                    </div>
+                </div>
+            </div>      
+            <div class="shoppingbag d-flex align-items-center">
+                <div class="icons">
+                    <a href="./mycart.html">
+                        <i class="ri-shopping-bag-line"></i>
+                        <div id="circle"><h5>2</h5></div>
+                    </a>
+                </div>
+                <h6 class="ml-3 mt-2">Rs. 0.00</h6>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid padding mb-3">
+        <div class="row padding">
+            <div class="div-1 col-md-6 col-lg-6">
+                <div style="background-image: url('images/cars.jpg'); background-size: cover; height:240px; width: auto;">
+                    <button class="button button1 btn-sm">Book Your Ride</button>    
+                </div>
+            </div>
+            <div class="div-2 col-md-6 col-lg-6">
+                <div style="background-image: url('images/room.jpg'); background-size: cover; height:240px; width: auto;">
+                    <button class="button button1 btn-sm">Book Your Room</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./images/Banners/sample-1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./images/Banners/sample-2.jpg" alt="Second slide">
+          </div>
+        </div>
+    </div>
+
+    <div class="static_cms">
+        <div class="row">
+            <div class="col-cms col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="box_cms"><img src="./images/cms/icon_cms1.png" alt=""
+                        class="img-responsive" />
+                    <div class="txt_cms">
+                        <h2>Free Shipping</h2>
+                        <p>On all orders over Rs. 75.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-cms col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="box_cms"><img src="./images/cms/icon_cms2.png" alt="" class="img-responsive" />
+                    <div class="txt_cms">
+                        <h2>Free Returns</h2>
+                        <p>Returns are free within 9 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-cms col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="box_cms"><img src="./images/cms/icon_cms3.png" alt="" class="img-responsive" />
+                    <div class="txt_cms">
+                        <h2>100% Payment Secure</h2>
+                        <p>Your payment are safe with us.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-cms col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="box_cms"><img src="./images/cms/icon_cms4.png" alt=""
+                        class="img-responsive" />
+                    <div class="txt_cms">
+                        <h2>Support 24/7</h2>
+                        <p>Contact us 24 hours a day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="container">
+            <h5>Categories</h5>
+            <p style="color: gray; height: 20px;">Add Popular Categories to weekly line up</p>
+            <br>
+            <div class="column padding">
+                <div class="row padding">
+                    <div class="col-md-4">
+                        <div class="card" style="text-align: left; background-image: url(images/GroupCategories/thumb-1.jpg); background-position: center; background-size: cover;">
+                            <h5 class="card-title ml-3 mt-3">Fresh Vegetables</h5>
+                            <p class="ml-3">17 Products</p>
+                            <a href=""><button type="button" class="btn btn-outline-light text-dark btn-sm">Shop Now <i class="ri-arrow-right-s-line"></i></button> </a>
+                            <br>
+                        </div> 
+                    </div>	
+    
+            <div class="col-md-4">
+                <div class="card" style="text-align: left; background-image: url(images/GroupCategories/thumb-1.jpg); background-position: center;">
+                  <h4 class="card-title ml-3 mt-2">Snacks</h4>
+                  <small style="color: gray;"><p class="card-text">17 items</p></small>
+                        <a href="index.html"><button type="button" class="btn btn-outline-light text-dark btn-sm">Shop Now <i class="ri-arrow-right-s-line"></i></button> </a>
+                        <br>
+                      </div> 
+                  </div>	
+    
+                  <div class="col-md-4">
+                    <div class="card" style="text-align: left; background-image: url(images/GroupCategories/thumb-1.jpg); background-position: center;">
+                      <h4 class="card-title">snacks</h4>
+                      <small style="color: gray;"><p class="card-text">17 items</p></small>
+                            <a href="index.html"><button type="button" class="btn btn-outline-light text-dark btn-sm">Shop Now <i class="ri-arrow-right-s-line"></i></button> </a>
+                            <br>
+                          </div> 
+                      </div>	
+
+        
+        <div class="col-md-4">
+            <div class="card" style="text-align: left; background-image: url(images/GroupCategories/thumb-1.jpg); background-position: center;">
+              <h4 class="card-title">snacks</h4>
+              <small style="color: gray;"><p class="card-text">17 items</p></small>
+                    <a href="index.html"><button type="button" class="btn btn-outline-light text-dark btn-sm">Shop Now <i class="ri-arrow-right-s-line"></i></button> </a>
+                    <br>
+                  </div> 
+              </div>		
+
+
+              <div class="col-md-4">
+                <div class="card" style="text-align: left; background-image: url(images/GroupCategories/thumb-1.jpg); background-position: center;">
+                  <h4 class="card-title">snacks</h4>
+                  <small style="color: gray;"><p class="card-text">17 items</p></small>
+                        <a href="index.html"><button type="button" class="btn btn-outline-light text-dark btn-sm">Shop Now <i class="ri-arrow-right-s-line"></i></button> </a>
+                        <br>
+                      </div> 
+                  </div>		
+    
+                  <div class="col-md-4">
+                    <div class="card" style="text-align: left; background-image: url(images/GroupCategories/thumb-1.jpg); background-position: center;">
+                      <h4 class="card-title">snacks</h4>
+                      <small style="color: gray;"><p class="card-text">17 items</p></small>
+                            <a href="index.html"><button type="button" class="btn btn-outline-light text-dark btn-sm">Shop Now <i class="ri-arrow-right-s-line"></i></button> </a>
+                            <br>
+                          </div> 
+                      </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="dk-footer" class="dk-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <a href="index.html" class="footer-logo">
+                            <img src="./images/orbitmart logo.PNG" alt="">
+                        </a>
+                        <p class="footer-info-text">
+                           Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                        </p>
+                        <div class="footer-social-link">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                      <i class="ri-facebook-fill bg-primary"></i>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">
+                                      <i class="ri-google-fill bg-danger"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <i class="ri-twitter-fill bg-info"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                      <i class="ri-instagram-line" style="background-color: blueviolet;"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="contact-info text-white">
+                                    <h3>Jaipur India</h3>
+                                    <p>5353 Road Avenue</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h3>95 711 9 5353</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3>Subscribe</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <p class="text-light">Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                              <i class="ri-send-plane-fill"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Copyright © 2019, All Right Reserved Seobin</span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="back-to-top" class="back-to-top">
+            <button class="btn btn-dark" title="Back to Top" style="display: block;">
+              <i class="ri-arrow-up-s-line"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
