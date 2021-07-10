@@ -11,23 +11,7 @@
   <title>Contact us</title>
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top bg-dark " style="height: 55px">
-    <div class="navbar-header page-scroll ">
-        <p class="navbar-brand text-light mt-2" style="font-size: 15px;">Welcome to OrbitMart !</p>
-    </div>
-    <div class="btn-group" >
-        <button type="button" class="btn btn-dark dropdown-toggle btn-sm" style="font-size: 15px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Settings
-        </button>
-        <div class="dropdown-menu dropdown-menu-right">
-            <a href="./profile.html"><button class="dropdown-item" type="button">My Account</button></a>
-            <a href="./signup.html"><button class="dropdown-item" type="button">Sign Up</button></a>
-            <a href="./login.html"><button class="dropdown-item" type="button">Sign In</button></a>
-        </div>
-    </div>
-</nav>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-white font-weight-bold " id="secondheader">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white font-weight-bold " id="secondheader">
     <img src="./images/orbitmart logo.PNG" alt="reload it">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -50,23 +34,25 @@
             <li class="nav-item active ml-2">
                 <a class="nav-link" href="./contact-us.html">Contact us</a>
             </li>
+            <li class="nav-item active ml-2">
+                <div class="dropdown">
+                    <button class="btn bg-white dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Settings
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./profile.html">My Account</a>
+                        <a class="dropdown-item" href="./login.html">SignUp</a>
+                        <a class="dropdown-item" href="./signup.html">SignIn</a>
+                    </div>
+                </div>
+            </li>
         </ul>
         <div class='align-items-end text-dark'>
             <i id='searchi' class="ri-search-line mr-5"></i>
-        </div>
-   
-        <div id="_desktop_contact_link">
-            <div class="contact-link d-flex">
-                <img id="customeric" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Qzc0MkMzQjg0NEE5MTFFQTgwNDFGODlFNDQxM0M3MjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Qzc0MkMzQjk0NEE5MTFFQTgwNDFGODlFNDQxM0M3MjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNzQyQzNCNjQ0QTkxMUVBODA0MUY4OUU0NDEzQzcyOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDNzQyQzNCNzQ0QTkxMUVBODA0MUY4OUU0NDEzQzcyOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqbE2QIAAATgSURBVHjatJhpbFRVGIZnhrYoNiDVGK1xhSJoXFERVFC0WAMRBI0K/pAQBRuNC3WJYsQFIj8U1KAExcQoBaFxS6xYSkYFIgUVUQEVR1wSbYJURShoW/X9kueYw/XcuTOAX/Jklnvnnvd+59vupKvOGpT6n+1JMUWU5Tlnp5hesh+LlIoqcZSoEHvENrFZ/MY5xyDkbLErz7UGiIZixdiiE8QYMVj8Lb4Vu0UPcZg4XGwS14oMxz4T74rywDU/EQ+LgwoV01s8ICaLj8RiUSu+QpBvh4rzxdein/f9HLwZtZ/dm0LEmBfmI+ICsT7h/F/FW4Hvz7C79z6bp1rFeSKXJCaN+24RN+ON0LaZF44U7eJTtmSfLJ+Y2WI0sfFF5NgJYhZes/jYKnoRqD9ZZohFvD9Y3CA28tvV4kfeXyS2i+tFW5yYO8U4cSEB6tsw8aZ4VfQV33vHuhPgs1loCnE2mXgZKM4kzZ8WQ7gRy7QJ6UCdOUdkxXCxNnKsj/hQ3CWez+PVSvGeWIiXzI5l4QfFPWy7vbbFbZOl4rNiZkCIy4iXE4Sk2IaxogVBW8TJXP86cblYlQos7tvV1IrHAwucJEZ4d5pkFshLxa18ti2dxjY5IROpS3uJSfN6O0L+CFx8GBfZHjh2aSRtnb3B78zmiRniTz5bvCygVlnNypiYoaKJ0m6qX4rJsqPZ82j62w0s4xpHRI5vJX7MOr3vu4m5FDyrMXdYLGUISBPyovjOeoS4PyCmjLuyatxfTBJryLwafvuleIy7rkRsqOoOJ+Ut23qKU8QTJRQru7vXUP82nTZkfbiTMgpcPdXZ+k8zXrYFluDJV2Kus5w0L6NllPt15nX2cwmLxNkloovXVYHj70OK64zk/JDtglbSvs3PpmkJQlJU1dYiKvxTBZyzzWVUJiY2QraRRllehJiaAs7pZPz4jxjbqnfcwYjVU/C60xiTrJIgTbIexNxeYmbQ0EoYAaKC/mKmWUAFzWfnIvq2SEqHiu5xZOK/Yu4j1ztoajYwNcZ46BmmOL+pjeQ3jha2symhdQxAbM6JqaKuDKZiNlLCu0jzqCCrJXUUuvEUsCxpX8MM3ELK2nbem0fMCEaKLtcozeUrxAbqTYptaqWjhlLTmukOmuAcSnoFxbCZJrmzgHixpvmC37VLvV5kLp7KxdoYnlwvOZ07t/HxNG++bcSDFcRdNW7fAB/gxfaIkCGIX+gH0Eou4PpKP96PQ0g3gnYlk5wtcLc4kVQfQ0euo0v3ZEJsYIsfYVI8NdLTZjJg/e57Zi0VeBndN0eDs4J1EwPQIERGC94PBG8jqV+Ld9eAW3g602F/dmESsXpFaJ65UXzDfpcjylr/cwRzXURIL+/9ajxWG3hscVv/EJnqFh9LGdkREtNBMOVoYrvprEMR1+zd5SwevI73rrMlRohfo8xz13ilYHm+Sa+DVM2xuAm6mAl/HkXMxoyrmG+z1IneBbKCzD0kTnh0iHKC6hFUjaAmXPoLQf0oz9Ob9uHxaFTcaBGa6NyWLcKV1cwefb3hKYvIUvb/ssgjSz7bU+xDXCeCnIcsoD/n2FTcnMVT64iZ9v397yST0NrHU12b+evD2Xwy6mNx5YEQkiTG99A6ClcDI8Z6CtbEhK5clKWL+OdqII+snQT05gP9F9c/AgwA86I/LUAPDuoAAAAASUVORK5CYII=" alt="">
-                <div class="phone">
-                    <p class="mt-3" style="font-size: 18px;">Company Call us</p>
-                    <a class="text-dark" style="margin-top: -10px;" href="tel:(+800)345678">(+800)345678</a>
-                </div>
-            </div>
         </div>      
         <div class="shoppingbag d-flex align-items-center">
             <div class="icons">
-                <a href="./mycart.html">
+                <a href="./mycart.html" class="text-decoration-none">
                     <i class="ri-shopping-bag-line"></i>
                     <div id="circle"><h5>2</h5></div>
                 </a>
@@ -154,84 +140,7 @@
     </div>
   </div>
 
-  <div class="container mt-3 p-3 bg-white rounded mb-3">
-    <div class="row gutters">
-      <div class="col-xl-4 col-lg-3 col-md-12 col-sm-12 col-12">
-        <div class="card h-100">
-          <div class="card-body">
-            <div class="account-settings text-center">
-              <div class="user-profile">
-                <div class="user-avatar">
-                  <h4>Distributer info</h4>
-                </div>
-                <div class="block mt-5 ml-5 d-flex align-items-center" style="font-size: 20px;">
-                  <div class="icon"><i class="ri-map-pin-2-fill"></i></div>
-                  <div class="data ml-3 mt-2">
-                    <h6>Orbit Mart, India</h6>
-                  </div>
-                </div>
-                <hr />
-                <div class="block ml-5 d-flex align-items-center">
-                  <div class="icon" style="font-size: 25px;"><i class="ri-phone-fill"></i></div>
-                  <div class="data ml-3 mt-3">
-                    <h6 style="font-size: 18px;">Call us: </h6>
-                    <a style="font-size: 14px;" href="tel:(+800)345678">(+800)345678</a>
-                  </div>
-                </div>
-                <hr />
-                <div class="block ml-5 d-flex align-items-center">
-                  <div class="icon" style="font-size: 25px;"><i class="ri-mail-line"></i></div>
-                  <div class="data ml-3 mt-3">
-                    <h6 style="font-size: 18px;">Email us: </h6>
-                    <a style="font-size: 14px;" href="#">gvsbbn@gmail.com</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12">
-        <div class="card h-100">
-          <div class="card-body">
-            <div class="row gutters p-2">
-              <div
-                class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12  d-flex justify-content-between align-items-center">
-                <h4 class="mb-2 text-primary">Distributer Contact</h4>
-              </div>
-              <div class="row ml-5 mt-4 ">
-                <div class="col-md-12 ml-5">
-                    <div class="form-group">
-                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-                    </div>
-                    <div class="form-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="customFile">
-                        <label class="custom-file-label" for="customFile">Choose file</label>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <select name="id_contact" class="form-control form-control-select">
-                        <option value="2">Customer service</option>
-                        <option value="1">Webmaster</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-                    </div>
-                </div>
-                <div class="col-md-6 ml-5">
-                    <div class="form-group">
-                      <a href="./main.html"><button type="button" class="btn btn-secondary">Send</button></a>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
