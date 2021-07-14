@@ -59,8 +59,8 @@ text-decoration:none;
 }
 
 #circle {
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   background: rgb(104, 143, 104);
   border-radius: 50%;
   position: absolute;
@@ -70,7 +70,7 @@ text-decoration:none;
 
 #circle h5 {
   color: white;
-  font-size: 10px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
