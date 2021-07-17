@@ -10,7 +10,7 @@
 .shoppingbag i {
   font-size: 30px;
   font-weight: 400;
-  color: #000;
+  color: #fff;
 }
 
 span{
@@ -40,6 +40,7 @@ text-decoration:none;
 }
 #searchi {
   font-size: 20px;
+  color: #fff;
 }
 .row.content {
   height: 1500px;
